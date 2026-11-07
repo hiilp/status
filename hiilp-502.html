@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="theme-color" content="#FFDA45" />
+  <title>HIILP · We'll be back soon</title>
+  <style>
+    :root { color-scheme: light; --yellow: #FFDA45; --sunny: #FFE66D; --ink: #322C1F; --muted: #645B45; --cream: #FFFDF2; }
+    * { box-sizing: border-box; }
+    html { min-height: 100%; }
+    body { min-height: 100vh; min-height: 100svh; margin: 0; display: grid; place-items: center; padding: 32px 20px; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans SC", "Microsoft YaHei", sans-serif; color: var(--ink); background: radial-gradient(circle at 85% 12%, #fff3ad 0 12%, transparent 31%), radial-gradient(circle at 12% 83%, #fff0a0 0 7%, transparent 29%), var(--yellow); }
+    .page { width: min(100%, 650px); text-align: center; }
+    .brand { display: inline-flex; align-items: center; gap: 10px; margin-bottom: 38px; font-weight: 850; letter-spacing: .065em; font-size: 24px; }
+    .brand-mark { display: grid; place-items: center; width: 40px; height: 40px; border-radius: 14px; background: var(--cream); box-shadow: 0 5px 0 #e5b923; font-size: 24px; }
+    .panel { position: relative; overflow: hidden; padding: 52px 42px 48px; background: rgba(255,253,242,.91); border: 2px solid rgba(255,255,255,.85); border-radius: 32px; box-shadow: 0 18px 0 rgba(131,100,9,.1), 0 28px 70px rgba(95,76,14,.13); }
+    .visual { width: 126px; height: 126px; margin: 0 auto 29px; display: grid; place-items: center; border-radius: 50%; background: #FFDF52; border: 6px solid #FFF3B3; position: relative; }
+    .sun-icon { font-size: 66px; line-height: 1; color: #A87610; text-shadow: 0 3px 0 rgba(255,255,255,.45); }
+    .sparkle { position: absolute; color: #EEB72B; font-weight: 900; font-size: 25px; }
+    .s1 { left: -36px; top: 7px; } .s2 { right: -36px; bottom: 15px; } .s3 { right: -13px; top: -23px; font-size: 19px; }
+    .eyebrow { margin: 0 0 13px; color: #997111; font-weight: 800; letter-spacing: .14em; font-size: 11px; }
+    h1 { font-size: clamp(32px, 6vw, 46px); line-height: 1.14; letter-spacing: -.04em; margin: 0 0 18px; }
+    .english { max-width: 465px; margin: 0 auto 12px; line-height: 1.75; font-size: 16px; color: var(--muted); }
+    .chinese { margin: 0 auto; line-height: 1.9; font-size: 14px; color: var(--muted); }
+    .note { display: inline-flex; align-items: center; gap: 9px; margin-top: 30px; padding: 11px 17px; border-radius: 999px; background: #FFF1B5; color: #6E5415; font-size: 12px; font-weight: 700; }
+    .dot { width: 8px; height: 8px; border-radius: 50%; background: #E2A82D; }
+    footer { margin-top: 36px; color: #654D16; opacity: .85; font-size: 12px; font-weight: 600; }
+    @media (max-width: 520px) { .brand { margin-bottom: 28px; font-size: 21px; } .panel { padding: 42px 23px 38px; border-radius: 26px; } .visual { width: 114px; height: 114px; } .sun-icon { font-size: 59px; } }
+    @media (prefers-reduced-motion: no-preference) { .visual { animation: float 3.5s ease-in-out infinite; } @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-7px); } } }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <div class="brand" aria-label="HIILP"><span class="brand-mark" aria-hidden="true">✦</span><span>HIILP</span></div>
+    <section class="panel" aria-labelledby="headline">
+      <div class="visual" aria-hidden="true"><span class="sparkle s1">✦</span><span class="sun-icon">☀</span><span class="sparkle s2">✳</span><span class="sparkle s3">✦</span></div>
+      <p class="eyebrow">A SHORT LITTLE PAUSE</p>
+      <h1 id="headline">We’ll be back soon!</h1>
+      <p class="english">Our site is taking a short break. We're working to bring everything back as soon as possible. Thanks for your patience!</p>
+      <p class="chinese" lang="zh-CN">网站暂时无法访问，我们正在努力恢复服务。<br />感谢你的理解与耐心等待！</p>
+      <div class="note"><span class="dot" aria-hidden="true"></span> TEMPORARILY UNAVAILABLE · 服务暂不可用</div>
+    </section>
+    <footer>© HIILP · See you again soon ☀</footer>
+  </main>
+</body>
+</html>
